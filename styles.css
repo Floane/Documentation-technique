@@ -1,0 +1,140 @@
+body {
+  background-color: #1e2a38;
+  font-family: 'Open Sans', sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+a:hover, .nav-link:hover {
+  color: #4ad991;
+}
+
+#title {
+  color: #5fb4e8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #263445;
+  background-color: #1e2a38;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#navbar li {
+  margin-bottom: 12px;
+}
+
+.nav-link {
+  font-size: 16px;
+  display: block;
+}
+
+#main-doc {
+  margin-left: 350px;
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  color: #5fb4e8;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+}
+
+.text-code {
+  background-color: #263445;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  color: #d4d4d4;
+}
+
+#code-comment {
+  font-style: italic;
+  color: gray;
+}
+
+#indent {
+  padding-left: 20px;
+}
+
+#Additional_Resources a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE DESIGN - PETIT ECRAN */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #263445;
+    padding: 15px;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  #navbar li {
+    margin-bottom: 0;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .main-section {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+  }
+
+  #title {
+    font-size: 24px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}
